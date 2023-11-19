@@ -32,9 +32,13 @@
 
 ### 2 同步静态网站代码到分支
 
-    1、build 静态代码
+    1、build 静态代码 (master 分支下, build 出的静态文件已经被忽略)
     $ docker run -it --volume /share/notes:/notes registry.cn-beijing.aliyuncs.com/livenowhy/node:gitbook bash
+    $ cd /notes/
+    $ gitbook install
     $ gitbook build .
+
+    # README.md  SUMMARY.md  _book  book.json  linux	node_modules  tools
 
     2、克隆gh-pages分支 (这步我们只是克隆了gh-pages分支, 并存放在一个新的目录notes-end)
     $ git clone -b gh-pages git@github.com:USER_NAME/notes.git notes-end
@@ -43,6 +47,9 @@
     $ cp  -r ../notes/_book/* .
 
     4、Push gh-pages分支到仓库
+    $ git add .
+    $ git commit -m "静态文件"
+    $ git push origin gh-pages
     然后，等几分钟后，就可以访问到在线图书了。以后，只要你每次修改之后，将生成静态网站 copy 到 notes-end目录，然后 Push一下就OK了。
 
     5、特别说明
