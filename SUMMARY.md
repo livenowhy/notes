@@ -46,4 +46,5 @@
 
 
 * python-pandas相关
-  * [pandas基础](python/pandas/01.md)
+  * [Pandas 基础](python/pandas/01_pandas_数据结构.md)
+  * [Pandas Series](python/pandas/02_pandas_series.md)
