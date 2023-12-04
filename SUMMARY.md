@@ -31,6 +31,9 @@
 
 
 * 工具
+  * [长城防火墙配置](tools/01_gfwlist.md)
+  * [如何设置 jupyter notebook 的代码自动补全](tools/02_jupyter_notebook.md)
+  * [mac 开发环境配置](tools/03_mac_开发环境.md)
   * [常用软件](tools/09_soft.md)
   * [nas 配置](tools/10_nas.md)
   * [gitbook pages 部署方法](tools/11_gitbook_pages.md)
@@ -50,3 +53,7 @@
 * python-pandas相关
   * [Pandas 基础](python/pandas/01_pandas_数据结构.md)
   * [Pandas Series](python/pandas/02_pandas_series.md)
+
+* 综合
+  * [http状态码 ](other/01_http状态码.md)
+  * [HTTP Request Header 请求头/响应头](other/02_请求头.md)
