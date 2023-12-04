@@ -14,5 +14,3 @@
   `3` 然后启动 jupyter，就可以看见 Nbextensions，勾选 Hinterland: 
   
   `4` 重启 jupyter notebook
-
-
