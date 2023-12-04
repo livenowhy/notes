@@ -31,6 +31,8 @@
 
 
 * 工具
+  * [常用软件](tools/09_soft.md)
+  * [nas 配置](tools/10_nas.md)
   * [gitbook pages 部署方法](tools/11_gitbook_pages.md)
 
 * 数据库相关
