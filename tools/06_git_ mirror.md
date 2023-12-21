@@ -24,13 +24,12 @@
 ## 本地镜像
 
     cd ${mirror_path}
-    git checkout ${branch}
-    git pull
+    git remote update
     git clone --mirror ${repository} ${mirror_path}
 
     cd  ${workspace}
-    git clone --reference ${mirror_path} -b ${branch} --depth=1 ${repository}
+    git clone --reference ${mirror_path} -b ${branch} --depth=1 ${repository} 
 
     用 Django 做测试
     git clone --mirror git@github.com:django/django.git /root/mirror_path/django
-    git clone --reference /root/mirror_path/django -b master --depth=1 git@github.com:django/django.git
+    git clone --reference /root/mirror_path/django -b main --depth=1 git@github.com:django/django.git
