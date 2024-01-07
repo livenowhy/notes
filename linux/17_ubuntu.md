@@ -25,8 +25,9 @@
 
 ### 安装软件
 
-    $ apt install curl vim git curl zip wget python3-pip -y
+    $ apt install curl vim vim-nox git cmake curl zip wget python3-pip -y
     $ pip3 install virtualenv
+
 
 ### 安装docker (参考其他文档)
 
@@ -50,8 +51,6 @@
     $ mkdir /share/github
     $ git clone
 
-
-
 ## mysql 
 
     $ sudo apt update
@@ -62,3 +61,20 @@
     $ sudo apt-get install libmysqlclient-dev
     $ sudo apt-get install default-libmysqlclient-dev build-essential
     $ pip3 install mysqlclient
+
+## 添加用户
+
+    $ adduser guest
+    $ adduser guest sudo
+    $ usermod -s /bin/bash guest    # 为该用户指定命令解释程序(通常为/bin/bash)
+    $ usermod -d /home/guest guest  # 为该用户指定用户主目录
+
+    如果要删除用户
+    $ deluser guest
+
+
+### 如何保持Ssh长时间连接不断开
+
+    ClientAliveInterval 8    # 每X秒向客户端发送一次保持连接的信号
+    ClientAliveCountMax 4    # 表示客户端如果X次没有响应则断开连接
+    $ service sshd restart
