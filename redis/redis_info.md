@@ -1,4 +1,4 @@
-#### Redis info 信息详解
+## Redis info 信息详解
     command: INFO [section]
     以一种易于解释(parse)且易于阅读的格式，返回关于 Redis 服务器的各种信息和统计数值。
     通过给定可选的参数 section ,可以让命令只返回某一部分的信息:

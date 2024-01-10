@@ -1,4 +1,4 @@
-# Session
+## Session
 
 ## session 和 cookie 的区别
   session 的底层是基于 cookie 技术来实现的，当用户打开浏览器，去访问服务器的时候，服务器会为每个用户的浏览器创建一个会话对象(session对象)，并且为每个session对象创建一个Jsessionid号。

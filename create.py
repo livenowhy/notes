@@ -12,7 +12,7 @@ import os
 
 directory = os.getcwd()
 
-ignore_path = ['易经', '.git']
+ignore_path = ['易经', '.git', 'law', 'python']
 def get_all_path(path=directory):
     path_list = []
     all_file = os.listdir(path)

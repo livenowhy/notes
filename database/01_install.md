@@ -1,4 +1,4 @@
-# CentOS 下的 Mysql 的安装和使用
+## CentOS 下的 Mysql 的安装和使用
 
 ## 安装 mysql
 

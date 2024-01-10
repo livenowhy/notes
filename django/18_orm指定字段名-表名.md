@@ -1,4 +1,4 @@
-# django的orm指定字段名 表名
+## django的orm指定字段名 表名
 
 1.指定字段名: 在定义字段的时候, 增加参数db_column=’real_field’;
 2.指定表名: 在model的class中, 添加Meta类, 在Meta类中指定表名 db_table

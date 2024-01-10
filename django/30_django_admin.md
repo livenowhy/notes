@@ -1,4 +1,4 @@
-# django-admin基本设置
+## django-admin基本设置
 
 ## 一、基本设置
 

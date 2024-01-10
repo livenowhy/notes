@@ -1,4 +1,4 @@
-### 安装 python3
+## 安装 python3
 
     安装 pip
     $ wget https://bootstrap.pypa.io/get-pip.py -o /share/get-pip.py

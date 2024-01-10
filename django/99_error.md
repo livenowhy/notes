@@ -1,4 +1,4 @@
-# Django 基础
+## Django 基础
 
 ## docker 容器部署 uwsgi docker 容器启动后马上退出解决方案
 

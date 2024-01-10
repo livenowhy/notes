@@ -1,4 +1,4 @@
-# Django中authenticate和login模块
+## Django中authenticate和login模块
   
   Django 提供内置的视图(view)函数用于处理登录和退出,Django提供两个函数来执行 django.contrib.auth中的动作: authenticate() 和 login()
 

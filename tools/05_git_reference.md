@@ -1,5 +1,4 @@
-
-## reference
+## git reference
 
      查看文件: http://shouce.jb51.net/gitbook/Git-Internals/Git-References.html
 
