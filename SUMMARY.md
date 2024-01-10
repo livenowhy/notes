@@ -94,12 +94,16 @@
 
 * python
 
+* node_modules
+
 * database
   * [# CentOS 下的 Mysql 的安装和使用](database/01_install.md)
   * [# mysql kill process 解决死锁](database/02_base.md)
   * [# sql 语句](database/03_sql.md)
   * [#mysqldump选项：](database/04_mysqldump.md)
   * [# InfluxDB](database/60_influxdb.md)
+
+* _book
 
 * groovy
   * [Groovy 基本语法](groovy/01_basic_syntax.md)
