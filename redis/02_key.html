@@ -1,0 +1,1670 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Redis 键(key) · 个人文档笔记</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="livenowhy">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ad/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03_data_type.html" />
+    
+    
+    <link rel="prev" href="01_client_list.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">个人日常笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    工作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../工作/010_学习uliweb.html">
+            
+                <a href="../工作/010_学习uliweb.html">
+            
+                    
+                    学习 uliweb 记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    jenkins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../jenkins/01.html">
+            
+                <a href="../jenkins/01.html">
+            
+                    
+                    需要了解的东西
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../jenkins/02.html">
+            
+                <a href="../jenkins/02.html">
+            
+                    
+                    Jenkins Pipeline 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    stock
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../stock/01_期权标的.html">
+            
+                <a href="../stock/01_期权标的.html">
+            
+                    
+                    期权标的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tools/01_gfwlist.html">
+            
+                <a href="../tools/01_gfwlist.html">
+            
+                    
+                    长城防火墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tools/02_jupyter_notebook.html">
+            
+                <a href="../tools/02_jupyter_notebook.html">
+            
+                    
+                    如何设置 jupyter notebook 的代码自动补全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tools/03_mac_开发环境.html">
+            
+                <a href="../tools/03_mac_开发环境.html">
+            
+                    
+                    mac 开发环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tools/04_git_base.html">
+            
+                <a href="../tools/04_git_base.html">
+            
+                    
+                    git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../tools/05_git_reference.html">
+            
+                <a href="../tools/05_git_reference.html">
+            
+                    
+                    git reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../tools/06_git_mirror.html">
+            
+                <a href="../tools/06_git_mirror.html">
+            
+                    
+                    git --mirror 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../tools/09_soft.html">
+            
+                <a href="../tools/09_soft.html">
+            
+                    
+                    工作中的工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../tools/10_nas.html">
+            
+                <a href="../tools/10_nas.html">
+            
+                    
+                    群晖 nas ssh 登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../tools/11_gitbook_pages.html">
+            
+                <a href="../tools/11_gitbook_pages.html">
+            
+                    
+                    方法一: 直接发布静态文件到 Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../tools/12_提升jenkins构建速度.html">
+            
+                <a href="../tools/12_提升jenkins构建速度.html">
+            
+                    
+                    提升 jenkins 构建速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../linux/01_init.html">
+            
+                <a href="../linux/01_init.html">
+            
+                    
+                    centos 环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../linux/02_python3.html">
+            
+                <a href="../linux/02_python3.html">
+            
+                    
+                    安装 python3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../linux/03_supervisord.html">
+            
+                <a href="../linux/03_supervisord.html">
+            
+                    
+                    supervisord 安装及设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../linux/04_docker.html">
+            
+                <a href="../linux/04_docker.html">
+            
+                    
+                    docker 安装及配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../linux/05_centos安装桌面系统.html">
+            
+                <a href="../linux/05_centos安装桌面系统.html">
+            
+                    
+                    Centos安装桌面系统并设置成默认启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../linux/06_frp.html">
+            
+                <a href="../linux/06_frp.html">
+            
+                    
+                    frp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../linux/07_certbot.html">
+            
+                <a href="../linux/07_certbot.html">
+            
+                    
+                    使⽤ Certbot ⾃动申请并续订阿⾥云 DNS 免费泛域名证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../linux/08-ssh穿越跳板机.html">
+            
+                <a href="../linux/08-ssh穿越跳板机.html">
+            
+                    
+                    ssh 穿越跳板机: 一条命令跨越跳板机直接登陆远程计算机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../linux/09_压缩.html">
+            
+                <a href="../linux/09_压缩.html">
+            
+                    
+                    linux 压缩命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../linux/10_隧道.html">
+            
+                <a href="../linux/10_隧道.html">
+            
+                    
+                    隧道使用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../linux/11_rsync.html">
+            
+                <a href="../linux/11_rsync.html">
+            
+                    
+                    rsync 服务器之间代码同步 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../linux/13_docker容器相关配置.html">
+            
+                <a href="../linux/13_docker容器相关配置.html">
+            
+                    
+                    docker 容器中设置中文语言包的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../linux/14_error_pip.html">
+            
+                <a href="../linux/14_error_pip.html">
+            
+                    
+                    error in setup command: use_2to3 is invalid.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../linux/17_ubuntu.html">
+            
+                <a href="../linux/17_ubuntu.html">
+            
+                    
+                    #更新 root 密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../linux/18_ubuntu_第三方软件.html">
+            
+                <a href="../linux/18_ubuntu_第三方软件.html">
+            
+                    
+                    安装第三方软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../linux/19_redhat.9.1.html">
+            
+                <a href="../linux/19_redhat.9.1.html">
+            
+                    
+                    订阅到红帽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../linux/21_ubuntu_安装搜狗输入.html">
+            
+                <a href="../linux/21_ubuntu_安装搜狗输入.html">
+            
+                    
+                    Ubuntu20.04安装搜狗输入法步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../linux/22_windows.html">
+            
+                <a href="../linux/22_windows.html">
+            
+                    
+                    windows 专业版激活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../linux/23_pycharm_激活.html">
+            
+                <a href="../linux/23_pycharm_激活.html">
+            
+                    
+                    pycharm_激活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="../linux/24_pycharm_最新激活码.html">
+            
+                <a href="../linux/24_pycharm_最新激活码.html">
+            
+                    
+                    24pycharm最新激活码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="../linux/25_port.html">
+            
+                <a href="../linux/25_port.html">
+            
+                    
+                    端口配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="../linux/26_ngnix.html">
+            
+                <a href="../linux/26_ngnix.html">
+            
+                    
+                    nginx 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../other/01_http状态码.html">
+            
+                <a href="../other/01_http状态码.html">
+            
+                    
+                    http状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../other/02_请求头.html">
+            
+                <a href="../other/02_请求头.html">
+            
+                    
+                    HTTP Request Header 请求头
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    django
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../django/01_create.html">
+            
+                <a href="../django/01_create.html">
+            
+                    
+                    django 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../django/02_models.html">
+            
+                <a href="../django/02_models.html">
+            
+                    
+                    模型(Models)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../django/03_redis_及缓冲策略.html">
+            
+                <a href="../django/03_redis_及缓冲策略.html">
+            
+                    
+                    使用第三方组件(django-redis)创建连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../django/04_celery.html">
+            
+                <a href="../django/04_celery.html">
+            
+                    
+                    celery 详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../django/05_skills.html">
+            
+                <a href="../django/05_skills.html">
+            
+                    
+                    Django 获取 Header 中的信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../django/06_rabbitmq.html">
+            
+                <a href="../django/06_rabbitmq.html">
+            
+                    
+                    rabbitMQ 操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../django/09_django_model_update.html">
+            
+                <a href="../django/09_django_model_update.html">
+            
+                    
+                    Django model update的各种用法介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../django/10_django_command.html">
+            
+                <a href="../django/10_django_command.html">
+            
+                    
+                    Django--自定义 Command 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../django/100_常用插件.html">
+            
+                <a href="../django/100_常用插件.html">
+            
+                    
+                    django 常用插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../django/11_content_type.html">
+            
+                <a href="../django/11_content_type.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../django/12_auth.html">
+            
+                <a href="../django/12_auth.html">
+            
+                    
+                    Django权限系统auth模块详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../django/13_authenticate_login.html">
+            
+                <a href="../django/13_authenticate_login.html">
+            
+                    
+                    Django中authenticate和login模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../django/14_auth_permission.html">
+            
+                <a href="../django/14_auth_permission.html">
+            
+                    
+                    django自带的权限管理Permission用法说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../django/15_auth系统模型分析.html">
+            
+                <a href="../django/15_auth系统模型分析.html">
+            
+                    
+                    Auth 系统中的表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../django/16_session.html">
+            
+                <a href="../django/16_session.html">
+            
+                    
+                    Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../django/17_templatetags.html">
+            
+                <a href="../django/17_templatetags.html">
+            
+                    
+                    templatetags 的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../django/18_orm指定字段名-表名.html">
+            
+                <a href="../django/18_orm指定字段名-表名.html">
+            
+                    
+                    django的orm指定字段名 表名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../django/19_mysql_connection.html">
+            
+                <a href="../django/19_mysql_connection.html">
+            
+                    
+                    too many connections错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="../django/20_mysql_常用命令.html">
+            
+                <a href="../django/20_mysql_常用命令.html">
+            
+                    
+                    mysql 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="../django/21_cas.html">
+            
+                <a href="../django/21_cas.html">
+            
+                    
+                    cas 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.21" data-path="../django/22_all.html">
+            
+                <a href="../django/22_all.html">
+            
+                    
+                    权限和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.22" data-path="../django/23_上传文件.html">
+            
+                <a href="../django/23_上传文件.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.23" data-path="../django/24_memcached.html">
+            
+                <a href="../django/24_memcached.html">
+            
+                    
+                    在django中使用memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.24" data-path="../django/25_用户系统.html">
+            
+                <a href="../django/25_用户系统.html">
+            
+                    
+                    用户系统案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.25" data-path="../django/26_内置的上下文处理器.html">
+            
+                <a href="../django/26_内置的上下文处理器.html">
+            
+                    
+                    内置上下文处理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.26" data-path="../django/27_中间件.html">
+            
+                <a href="../django/27_中间件.html">
+            
+                    
+                    中间件的原理和定义方式详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.27" data-path="../django/28_内置中间件.html">
+            
+                <a href="../django/28_内置中间件.html">
+            
+                    
+                    内置中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.28" data-path="../django/29_group_permission_user.html">
+            
+                <a href="../django/29_group_permission_user.html">
+            
+                    
+                    分组-group、permission、user 的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.29" data-path="../django/30_django_admin.html">
+            
+                <a href="../django/30_django_admin.html">
+            
+                    
+                    django-admin基本设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.30" data-path="../django/31_django_debug_toolbar.html">
+            
+                <a href="../django/31_django_debug_toolbar.html">
+            
+                    
+                    Django debug toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.31" data-path="../django/32_django_总结.html">
+            
+                <a href="../django/32_django_总结.html">
+            
+                    
+                    极客时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.32" data-path="../django/33_django_signals_信号.html">
+            
+                <a href="../django/33_django_signals_信号.html">
+            
+                    
+                    django Signals - 信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.33" data-path="../django/34_django_rest_framework.html">
+            
+                <a href="../django/34_django_rest_framework.html">
+            
+                    
+                    安装依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.34" data-path="../django/99_error.html">
+            
+                <a href="../django/99_error.html">
+            
+                    
+                    Django 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    node_modules
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    database
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../database/01_install.html">
+            
+                <a href="../database/01_install.html">
+            
+                    
+                    CentOS 下的 Mysql 的安装和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../database/02_base.html">
+            
+                <a href="../database/02_base.html">
+            
+                    
+                    mysql kill process 解决死锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../database/03_sql.html">
+            
+                <a href="../database/03_sql.html">
+            
+                    
+                    sql 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../database/04_mysqldump.html">
+            
+                <a href="../database/04_mysqldump.html">
+            
+                    
+                    mysqldump选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../database/60_influxdb.html">
+            
+                <a href="../database/60_influxdb.html">
+            
+                    
+                    InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    _book
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    groovy
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../groovy/01_basic_syntax.html">
+            
+                <a href="../groovy/01_basic_syntax.html">
+            
+                    
+                    Groovy 基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../groovy/02_data_types.html">
+            
+                <a href="../groovy/02_data_types.html">
+            
+                    
+                    Groovy 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../groovy/03_loops.html">
+            
+                <a href="../groovy/03_loops.html">
+            
+                    
+                    Groovy 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../groovy/04_numbers.html">
+            
+                <a href="../groovy/04_numbers.html">
+            
+                    
+                    Groovy 数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="01_client_list.html">
+            
+                <a href="01_client_list.html">
+            
+                    
+                    client list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13.2" data-path="02_key.html">
+            
+                <a href="02_key.html">
+            
+                    
+                    Redis 键(key)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="03_data_type.html">
+            
+                <a href="03_data_type.html">
+            
+                    
+                    Redis 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="04_string.html">
+            
+                <a href="04_string.html">
+            
+                    
+                    string 数据类型操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="redis_info.html">
+            
+                <a href="redis_info.html">
+            
+                    
+                    Redis info 信息详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="set.html">
+            
+                <a href="set.html">
+            
+                    
+                    Redis 集合(Set)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="slowlog.html">
+            
+                <a href="slowlog.html">
+            
+                    
+                    redis慢查询日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Redis 键(key)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="redis-&#x952E;key">Redis &#x952E;(key)</h2>
+<h3 id="redis-&#x952E;&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x7BA1;&#x7406;-redis-&#x7684;&#x952E;">Redis &#x952E;&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x7BA1;&#x7406; redis &#x7684;&#x952E;</h3>
+<pre><code>key &#x662F; redis &#x7684;&#x952E;, &#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;
+</code></pre><h3 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h3>
+<p>  <code>1</code> DEL &#x5220;&#x9664;</p>
+<pre><code>DEL key [key ...] 
+&#x5220;&#x9664;&#x7ED9;&#x5B9A;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A; key, &#x4E0D;&#x5B58;&#x5728;&#x7684; key &#x4F1A;&#x88AB;&#x5FFD;&#x7565;.
+&#x8FD4;&#x56DE;&#x503C;: &#x88AB;&#x5220;&#x9664; key &#x7684;&#x6570;&#x91CF;.
+</code></pre><p>  <code>2</code>  DUMP &#x5E8F;&#x5217;&#x5316;&#x7ED9;&#x5B9A; key</p>
+<pre><code>DUMP key
+&#x5E8F;&#x5217;&#x5316;&#x7ED9;&#x5B9A; key, &#x5E76;&#x8FD4;&#x56DE;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x503C;, &#x4F7F;&#x7528; RESTORE &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x503C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x4E3A; Redis &#x952E;&#x3002;
+&#x8FD4;&#x56DE;&#x503C;: &#x5982;&#x679C; key &#x4E0D;&#x5B58;&#x5728;, &#x90A3;&#x4E48;&#x8FD4;&#x56DE; nil; &#x5426;&#x5219;, &#x8FD4;&#x56DE;&#x5E8F;&#x5217;&#x5316;&#x4E4B;&#x540E;&#x7684;&#x503C;
+</code></pre><p>  <code>3</code>  EXISTS &#x68C0;&#x67E5;&#x7ED9;&#x5B9A; key &#x662F;&#x5426;&#x5B58;&#x5728;</p>
+<pre><code>EXISTS key
+&#x8FD4;&#x56DE;&#x503C;: &#x82E5; key &#x5B58;&#x5728;, &#x8FD4;&#x56DE; 1; &#x5426;&#x5219;&#x8FD4;&#x56DE; 0
+</code></pre><p>  <code>4</code> KEYS &#x67E5;&#x627E; key</p>
+<pre><code>KEYS pattern    &#x67E5;&#x627E;&#x6240;&#x6709;&#x7B26;&#x5408;&#x7ED9;&#x5B9A;&#x6A21;&#x5F0F; (pattern) &#x7684; key
+</code></pre><p>  <code>5</code> MOVE</p>
+<pre><code>MOVE key db    &#x5C06;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x7684; key &#x79FB;&#x52A8;&#x5230;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5E93; db &#x5F53;&#x4E2D;
+</code></pre><p>  <code>6</code> TYPE  &#x67E5;&#x770B;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+<pre><code>TYPE key    &#x8FD4;&#x56DE; key &#x6240;&#x50A8;&#x5B58;&#x7684;&#x503C;&#x7684;&#x7C7B;&#x578B;
+</code></pre><p>  <code>7</code> TTL &#x4EE5;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;, &#x8FD4;&#x56DE;&#x7ED9;&#x5B9A; key &#x7684;&#x5269;&#x4F59;&#x751F;&#x5B58;&#x65F6;&#x95F4;(TTL, time to live)</p>
+<pre><code>TTL key
+</code></pre><p>  <code>8</code> PTTL &#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x8FD4;&#x56DE; key &#x7684;&#x5269;&#x4F59;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;</p>
+<pre><code>PTTL key
+</code></pre><p>  <code>9</code> EXPIRE &#x4E3A;&#x7ED9;&#x5B9A; key &#x8BBE;&#x7F6E;&#x8FC7;&#x671F;&#x65F6;&#x95F4;</p>
+<pre><code>EXPIRE key seconds
+&#x4E3A;&#x7ED9;&#x5B9A; key &#x8BBE;&#x7F6E;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#xFF0C;&#x5F53; key &#x8FC7;&#x671F;&#x65F6;(&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x4E3A; 0 ),&#x5B83;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x3002;
+&#x5728; Redis &#x4E2D;&#xFF0C;&#x5E26;&#x6709;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x7684; key &#x88AB;&#x79F0;&#x4E3A;&quot;&#x6613;&#x5931;&#x7684;&quot;(volatile)&#x3002;
+&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528; DEL &#x547D;&#x4EE4;&#x6765;&#x5220;&#x9664;&#x6574;&#x4E2A; key &#x6765;&#x79FB;&#x9664;, &#x6216;&#x8005;&#x88AB; SET &#x548C; GETSET &#x547D;&#x4EE4;&#x8986;&#x5199;(overwrite)&#xFF0C;
+&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x53EA;&#x662F;&#x4FEE;&#x6539;(alter)&#x4E00;&#x4E2A;&#x5E26;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x7684; key &#x7684;&#x503C;&#x800C;&#x4E0D;&#x662F;&#x7528;&#x4E00;&#x4E2A;&#x65B0;&#x7684; key &#x503C;&#x6765;&#x4EE3;&#x66FF;(replace)&#x5B83;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x4E0D;&#x4F1A;&#x88AB;&#x6539;&#x53D8;&#x3002;
+
+&#x6BD4;&#x5982;&#x8BF4;,&#x5BF9;&#x4E00;&#x4E2A; key &#x6267;&#x884C; INCR &#x547D;&#x4EE4;&#xFF0C;&#x5BF9;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x8FDB;&#x884C; LPUSH &#x547D;&#x4EE4;&#xFF0C;&#x6216;&#x8005;&#x5BF9;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8868;&#x6267;&#x884C; HSET &#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x7C7B;&#x64CD;&#x4F5C;&#x90FD;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539; key &#x672C;&#x8EAB;&#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x3002;
+
+&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528; RENAME &#x5BF9;&#x4E00;&#x4E2A; key &#x8FDB;&#x884C;&#x6539;&#x540D;&#xFF0C;&#x90A3;&#x4E48;&#x6539;&#x540D;&#x540E;&#x7684; key &#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x548C;&#x6539;&#x540D;&#x524D;&#x4E00;&#x6837;&#x3002;
+
+RENAME &#x547D;&#x4EE4;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x53EF;&#x80FD;&#x662F;&#xFF0C;&#x5C1D;&#x8BD5;&#x5C06;&#x4E00;&#x4E2A;&#x5E26;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x7684; key &#x6539;&#x540D;&#x6210;&#x53E6;&#x4E00;&#x4E2A;&#x5E26;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x7684; another_key &#xFF0C;&#x8FD9;&#x65F6;&#x65E7;&#x7684; another_key (&#x4EE5;&#x53CA;&#x5B83;&#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;)&#x4F1A;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x7136;&#x540E;&#x65E7;&#x7684; key &#x4F1A;&#x6539;&#x540D;&#x4E3A; another_key &#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x65B0;&#x7684; another_key &#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x4E5F;&#x548C;&#x539F;&#x672C;&#x7684; key &#x4E00;&#x6837;&#x3002;
+
+&#x4F7F;&#x7528; PERSIST &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x5220;&#x9664; key &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x79FB;&#x9664; key &#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#xFF0C;&#x8BA9; key &#x91CD;&#x65B0;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x300E;&#x6301;&#x4E45;&#x7684;&#x300F;(persistent) key &#x3002;
+
+&#x66F4;&#x65B0;&#x751F;&#x5B58;&#x65F6;&#x95F4;
+
+&#x53EF;&#x4EE5;&#x5BF9;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5E26;&#x6709;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x7684; key &#x6267;&#x884C; EXPIRE &#x547D;&#x4EE4;&#xFF0C;&#x65B0;&#x6307;&#x5B9A;&#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x4F1A;&#x53D6;&#x4EE3;&#x65E7;&#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x3002;
+
+&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x7CBE;&#x786E;&#x5EA6;
+
+&#x5728; Redis 2.4 &#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x5EF6;&#x8FDF;&#x5728; 1 &#x79D2;&#x949F;&#x4E4B;&#x5185; &#x2014;&#x2014; &#x4E5F;&#x5373;&#x662F;&#xFF0C;&#x5C31;&#x7B97; key &#x5DF2;&#x7ECF;&#x8FC7;&#x671F;&#xFF0C;&#x4F46;&#x5B83;&#x8FD8;&#x662F;&#x53EF;&#x80FD;&#x5728;&#x8FC7;&#x671F;&#x4E4B;&#x540E;&#x4E00;&#x79D2;&#x949F;&#x4E4B;&#x5185;&#x88AB;&#x8BBF;&#x95EE;&#x5230;&#xFF0C;&#x800C;&#x5728;&#x65B0;&#x7684; Redis 2.6 &#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5EF6;&#x8FDF;&#x88AB;&#x964D;&#x4F4E;&#x5230; 1 &#x6BEB;&#x79D2;&#x4E4B;&#x5185;&#x3002;
+
+Redis 2.1.3 &#x4E4B;&#x524D;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;
+
+&#x5728; Redis 2.1.3 &#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x7684; key &#x4F1A;&#x5BFC;&#x81F4;&#x6574;&#x4E2A; key &#x88AB;&#x5220;&#x9664;&#xFF0C;&#x8FD9;&#x4E00;&#x884C;&#x4E3A;&#x662F;&#x53D7;&#x5F53;&#x65F6;&#x590D;&#x5236;(replication)&#x5C42;&#x7684;&#x9650;&#x5236;&#x800C;&#x4F5C;&#x51FA;&#x7684;&#xFF0C;&#x73B0;&#x5728;&#x8FD9;&#x4E00;&#x9650;&#x5236;&#x5DF2;&#x7ECF;&#x88AB;&#x4FEE;&#x590D;&#x3002;
+
+&#x8FD4;&#x56DE;&#x503C;: &#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x8FD4;&#x56DE; 1;
+&#x5F53; key &#x4E0D;&#x5B58;&#x5728;&#x6216;&#x8005;&#x4E0D;&#x80FD;&#x4E3A; key &#x8BBE;&#x7F6E;&#x751F;&#x5B58;&#x65F6;&#x95F4;&#x65F6;(&#x6BD4;&#x5982;&#x5728;&#x4F4E;&#x4E8E; 2.1.3 &#x7248;&#x672C;&#x7684; Redis &#x4E2D;&#x4F60;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0; key &#x7684;&#x751F;&#x5B58;&#x65F6;&#x95F4;)&#xFF0C;&#x8FD4;&#x56DE; 0 &#x3002;
+</code></pre><p>  <code>10</code> EXPIREAT</p>
+<pre><code>EXPIREAT key timestamp 
+EXPIREAT &#x7684;&#x4F5C;&#x7528;&#x548C; EXPIRE &#x7C7B;&#x4F3C;, &#x90FD;&#x7528;&#x4E8E;&#x4E3A; key &#x8BBE;&#x7F6E;&#x8FC7;&#x671F;&#x65F6;&#x95F4;.
+&#x4E0D;&#x540C;&#x5728;&#x4E8E; EXPIREAT &#x547D;&#x4EE4;&#x63A5;&#x53D7;&#x7684;&#x65F6;&#x95F4;&#x53C2;&#x6570;&#x662F; UNIX &#x65F6;&#x95F4;&#x6233;(unix timestamp)
+</code></pre><p>  <code>11</code> PEXPIRE &#x8BBE;&#x7F6E; key &#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x4EE5;&#x6BEB;&#x79D2;&#x8BA1;</p>
+<pre><code>PEXPIRE key milliseconds
+</code></pre><p>  <code>12</code> PEXPIREAT &#x8BBE;&#x7F6E; key &#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x6233;(unix timestamp) &#x4EE5;&#x6BEB;&#x79D2;&#x8BA1;</p>
+<pre><code>PEXPIREAT key milliseconds-timestamp
+</code></pre><p>  <code>13</code> PERSIST</p>
+<pre><code>PERSIST key  ;&#x79FB;&#x9664; key &#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;, key &#x5C06;&#x6301;&#x4E45;&#x4FDD;&#x6301;
+</code></pre><p>  <code>14</code> RENAMENX &#x4FEE;&#x6539; key &#x7684;&#x540D;&#x79F0;</p>
+<pre><code>RENAMENX key newkey   &#x4EC5;&#x5F53; newkey &#x4E0D;&#x5B58;&#x5728;&#x65F6;, &#x5C06; key &#x6539;&#x540D;&#x4E3A; newkey
+</code></pre><p>  <code>15</code> RENAME   &#x4FEE;&#x6539; key &#x7684;&#x540D;&#x79F0;</p>
+<pre><code>RENAME key newkey   
+</code></pre><p>  <code>16</code> RANDOMKEY</p>
+<pre><code>RANDOMKEY  &#x4ECE;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x968F;&#x673A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; key
+</code></pre><p>  <code>17</code> SCAN &#x8FED;&#x4EE3;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x952E;</p>
+<pre><code>SCAN cursor [MATCH pattern] [COUNT count]
+cursor: &#x6E38;&#x6807;
+pattern: &#x5339;&#x914D;&#x7684;&#x6A21;&#x5F0F;
+count: &#x6307;&#x5B9A;&#x4ECE;&#x6570;&#x636E;&#x96C6;&#x91CC;&#x8FD4;&#x56DE;&#x591A;&#x5C11;&#x5143;&#x7D20;, &#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 10
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01_client_list.html" class="navigation navigation-prev " aria-label="Previous page: client list">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03_data_type.html" class="navigation navigation-next " aria-label="Next page: Redis 数据类型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Redis 键(key)","level":"1.13.2","depth":2,"next":{"title":"Redis 数据类型","level":"1.13.3","depth":2,"path":"redis/03_data_type.md","ref":"redis/03_data_type.md","articles":[]},"previous":{"title":"client list","level":"1.13.1","depth":2,"path":"redis/01_client_list.md","ref":"redis/01_client_list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","katex","ad"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css"},"pluginsConfig":{"ad":{"contentBottom":"%3Cdiv%3E%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A//www.miitbeian.gov.cn%22%3E%u8C6BICP%u590715020239%u53F7-1%3C/a%3E%3C/div%3E"},"expandable-chapters":{},"katex":{},"highlight":{},"search":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"livenowhy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人文档笔记","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*","description":"个人文档笔记, 学习记录"},"file":{"path":"redis/02_key.md","mtime":"2024-01-10T00:56:44.834Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2024-01-10T01:24:30.744Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ad/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

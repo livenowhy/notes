@@ -1,0 +1,1653 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>CentOS 下的 Mysql 的安装和使用 · 个人文档笔记</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="livenowhy">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ad/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02_base.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">个人日常笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    工作
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../工作/010_学习uliweb.html">
+            
+                <a href="../工作/010_学习uliweb.html">
+            
+                    
+                    学习 uliweb 记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    jenkins
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../jenkins/01.html">
+            
+                <a href="../jenkins/01.html">
+            
+                    
+                    需要了解的东西
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../jenkins/02.html">
+            
+                <a href="../jenkins/02.html">
+            
+                    
+                    Jenkins Pipeline 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    stock
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../stock/01_期权标的.html">
+            
+                <a href="../stock/01_期权标的.html">
+            
+                    
+                    期权标的
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    tools
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tools/01_gfwlist.html">
+            
+                <a href="../tools/01_gfwlist.html">
+            
+                    
+                    长城防火墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tools/02_jupyter_notebook.html">
+            
+                <a href="../tools/02_jupyter_notebook.html">
+            
+                    
+                    如何设置 jupyter notebook 的代码自动补全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tools/03_mac_开发环境.html">
+            
+                <a href="../tools/03_mac_开发环境.html">
+            
+                    
+                    mac 开发环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tools/04_git_base.html">
+            
+                <a href="../tools/04_git_base.html">
+            
+                    
+                    git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../tools/05_git_reference.html">
+            
+                <a href="../tools/05_git_reference.html">
+            
+                    
+                    git reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../tools/06_git_mirror.html">
+            
+                <a href="../tools/06_git_mirror.html">
+            
+                    
+                    git --mirror 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../tools/09_soft.html">
+            
+                <a href="../tools/09_soft.html">
+            
+                    
+                    工作中的工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../tools/10_nas.html">
+            
+                <a href="../tools/10_nas.html">
+            
+                    
+                    群晖 nas ssh 登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../tools/11_gitbook_pages.html">
+            
+                <a href="../tools/11_gitbook_pages.html">
+            
+                    
+                    方法一: 直接发布静态文件到 Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../tools/12_提升jenkins构建速度.html">
+            
+                <a href="../tools/12_提升jenkins构建速度.html">
+            
+                    
+                    提升 jenkins 构建速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../linux/01_init.html">
+            
+                <a href="../linux/01_init.html">
+            
+                    
+                    centos 环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../linux/02_python3.html">
+            
+                <a href="../linux/02_python3.html">
+            
+                    
+                    安装 python3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../linux/03_supervisord.html">
+            
+                <a href="../linux/03_supervisord.html">
+            
+                    
+                    supervisord 安装及设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../linux/04_docker.html">
+            
+                <a href="../linux/04_docker.html">
+            
+                    
+                    docker 安装及配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../linux/05_centos安装桌面系统.html">
+            
+                <a href="../linux/05_centos安装桌面系统.html">
+            
+                    
+                    Centos安装桌面系统并设置成默认启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../linux/06_frp.html">
+            
+                <a href="../linux/06_frp.html">
+            
+                    
+                    frp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../linux/07_certbot.html">
+            
+                <a href="../linux/07_certbot.html">
+            
+                    
+                    使⽤ Certbot ⾃动申请并续订阿⾥云 DNS 免费泛域名证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../linux/08-ssh穿越跳板机.html">
+            
+                <a href="../linux/08-ssh穿越跳板机.html">
+            
+                    
+                    ssh 穿越跳板机: 一条命令跨越跳板机直接登陆远程计算机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../linux/09_压缩.html">
+            
+                <a href="../linux/09_压缩.html">
+            
+                    
+                    linux 压缩命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../linux/10_隧道.html">
+            
+                <a href="../linux/10_隧道.html">
+            
+                    
+                    隧道使用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../linux/11_rsync.html">
+            
+                <a href="../linux/11_rsync.html">
+            
+                    
+                    rsync 服务器之间代码同步 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../linux/13_docker容器相关配置.html">
+            
+                <a href="../linux/13_docker容器相关配置.html">
+            
+                    
+                    docker 容器中设置中文语言包的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../linux/14_error_pip.html">
+            
+                <a href="../linux/14_error_pip.html">
+            
+                    
+                    error in setup command: use_2to3 is invalid.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../linux/17_ubuntu.html">
+            
+                <a href="../linux/17_ubuntu.html">
+            
+                    
+                    #更新 root 密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../linux/18_ubuntu_第三方软件.html">
+            
+                <a href="../linux/18_ubuntu_第三方软件.html">
+            
+                    
+                    安装第三方软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../linux/19_redhat.9.1.html">
+            
+                <a href="../linux/19_redhat.9.1.html">
+            
+                    
+                    订阅到红帽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../linux/21_ubuntu_安装搜狗输入.html">
+            
+                <a href="../linux/21_ubuntu_安装搜狗输入.html">
+            
+                    
+                    Ubuntu20.04安装搜狗输入法步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../linux/22_windows.html">
+            
+                <a href="../linux/22_windows.html">
+            
+                    
+                    windows 专业版激活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../linux/23_pycharm_激活.html">
+            
+                <a href="../linux/23_pycharm_激活.html">
+            
+                    
+                    pycharm_激活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="../linux/24_pycharm_最新激活码.html">
+            
+                <a href="../linux/24_pycharm_最新激活码.html">
+            
+                    
+                    24pycharm最新激活码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="../linux/25_port.html">
+            
+                <a href="../linux/25_port.html">
+            
+                    
+                    端口配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="../linux/26_ngnix.html">
+            
+                <a href="../linux/26_ngnix.html">
+            
+                    
+                    nginx 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    other
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../other/01_http状态码.html">
+            
+                <a href="../other/01_http状态码.html">
+            
+                    
+                    http状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../other/02_请求头.html">
+            
+                <a href="../other/02_请求头.html">
+            
+                    
+                    HTTP Request Header 请求头
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    django
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../django/01_create.html">
+            
+                <a href="../django/01_create.html">
+            
+                    
+                    django 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../django/02_models.html">
+            
+                <a href="../django/02_models.html">
+            
+                    
+                    模型(Models)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../django/03_redis_及缓冲策略.html">
+            
+                <a href="../django/03_redis_及缓冲策略.html">
+            
+                    
+                    使用第三方组件(django-redis)创建连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../django/04_celery.html">
+            
+                <a href="../django/04_celery.html">
+            
+                    
+                    celery 详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../django/05_skills.html">
+            
+                <a href="../django/05_skills.html">
+            
+                    
+                    Django 获取 Header 中的信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../django/06_rabbitmq.html">
+            
+                <a href="../django/06_rabbitmq.html">
+            
+                    
+                    rabbitMQ 操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../django/09_django_model_update.html">
+            
+                <a href="../django/09_django_model_update.html">
+            
+                    
+                    Django model update的各种用法介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../django/10_django_command.html">
+            
+                <a href="../django/10_django_command.html">
+            
+                    
+                    Django--自定义 Command 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../django/100_常用插件.html">
+            
+                <a href="../django/100_常用插件.html">
+            
+                    
+                    django 常用插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../django/11_content_type.html">
+            
+                <a href="../django/11_content_type.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../django/12_auth.html">
+            
+                <a href="../django/12_auth.html">
+            
+                    
+                    Django权限系统auth模块详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../django/13_authenticate_login.html">
+            
+                <a href="../django/13_authenticate_login.html">
+            
+                    
+                    Django中authenticate和login模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../django/14_auth_permission.html">
+            
+                <a href="../django/14_auth_permission.html">
+            
+                    
+                    django自带的权限管理Permission用法说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../django/15_auth系统模型分析.html">
+            
+                <a href="../django/15_auth系统模型分析.html">
+            
+                    
+                    Auth 系统中的表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../django/16_session.html">
+            
+                <a href="../django/16_session.html">
+            
+                    
+                    Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../django/17_templatetags.html">
+            
+                <a href="../django/17_templatetags.html">
+            
+                    
+                    templatetags 的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../django/18_orm指定字段名-表名.html">
+            
+                <a href="../django/18_orm指定字段名-表名.html">
+            
+                    
+                    django的orm指定字段名 表名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../django/19_mysql_connection.html">
+            
+                <a href="../django/19_mysql_connection.html">
+            
+                    
+                    too many connections错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="../django/20_mysql_常用命令.html">
+            
+                <a href="../django/20_mysql_常用命令.html">
+            
+                    
+                    mysql 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="../django/21_cas.html">
+            
+                <a href="../django/21_cas.html">
+            
+                    
+                    cas 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.21" data-path="../django/22_all.html">
+            
+                <a href="../django/22_all.html">
+            
+                    
+                    权限和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.22" data-path="../django/23_上传文件.html">
+            
+                <a href="../django/23_上传文件.html">
+            
+                    
+                    文件上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.23" data-path="../django/24_memcached.html">
+            
+                <a href="../django/24_memcached.html">
+            
+                    
+                    在django中使用memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.24" data-path="../django/25_用户系统.html">
+            
+                <a href="../django/25_用户系统.html">
+            
+                    
+                    用户系统案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.25" data-path="../django/26_内置的上下文处理器.html">
+            
+                <a href="../django/26_内置的上下文处理器.html">
+            
+                    
+                    内置上下文处理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.26" data-path="../django/27_中间件.html">
+            
+                <a href="../django/27_中间件.html">
+            
+                    
+                    中间件的原理和定义方式详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.27" data-path="../django/28_内置中间件.html">
+            
+                <a href="../django/28_内置中间件.html">
+            
+                    
+                    内置中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.28" data-path="../django/29_group_permission_user.html">
+            
+                <a href="../django/29_group_permission_user.html">
+            
+                    
+                    分组-group、permission、user 的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.29" data-path="../django/30_django_admin.html">
+            
+                <a href="../django/30_django_admin.html">
+            
+                    
+                    django-admin基本设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.30" data-path="../django/31_django_debug_toolbar.html">
+            
+                <a href="../django/31_django_debug_toolbar.html">
+            
+                    
+                    Django debug toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.31" data-path="../django/32_django_总结.html">
+            
+                <a href="../django/32_django_总结.html">
+            
+                    
+                    极客时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.32" data-path="../django/33_django_signals_信号.html">
+            
+                <a href="../django/33_django_signals_信号.html">
+            
+                    
+                    django Signals - 信号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.33" data-path="../django/34_django_rest_framework.html">
+            
+                <a href="../django/34_django_rest_framework.html">
+            
+                    
+                    安装依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.34" data-path="../django/99_error.html">
+            
+                <a href="../django/99_error.html">
+            
+                    
+                    Django 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    node_modules
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    database
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.10.1" data-path="01_install.html">
+            
+                <a href="01_install.html">
+            
+                    
+                    CentOS 下的 Mysql 的安装和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="02_base.html">
+            
+                <a href="02_base.html">
+            
+                    
+                    mysql kill process 解决死锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="03_sql.html">
+            
+                <a href="03_sql.html">
+            
+                    
+                    sql 语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="04_mysqldump.html">
+            
+                <a href="04_mysqldump.html">
+            
+                    
+                    mysqldump选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="60_influxdb.html">
+            
+                <a href="60_influxdb.html">
+            
+                    
+                    InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    _book
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    groovy
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../groovy/01_basic_syntax.html">
+            
+                <a href="../groovy/01_basic_syntax.html">
+            
+                    
+                    Groovy 基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../groovy/02_data_types.html">
+            
+                <a href="../groovy/02_data_types.html">
+            
+                    
+                    Groovy 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../groovy/03_loops.html">
+            
+                <a href="../groovy/03_loops.html">
+            
+                    
+                    Groovy 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../groovy/04_numbers.html">
+            
+                <a href="../groovy/04_numbers.html">
+            
+                    
+                    Groovy 数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../redis/01_client_list.html">
+            
+                <a href="../redis/01_client_list.html">
+            
+                    
+                    client list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../redis/02_key.html">
+            
+                <a href="../redis/02_key.html">
+            
+                    
+                    Redis 键(key)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../redis/03_data_type.html">
+            
+                <a href="../redis/03_data_type.html">
+            
+                    
+                    Redis 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../redis/04_string.html">
+            
+                <a href="../redis/04_string.html">
+            
+                    
+                    string 数据类型操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../redis/redis_info.html">
+            
+                <a href="../redis/redis_info.html">
+            
+                    
+                    Redis info 信息详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../redis/set.html">
+            
+                <a href="../redis/set.html">
+            
+                    
+                    Redis 集合(Set)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../redis/slowlog.html">
+            
+                <a href="../redis/slowlog.html">
+            
+                    
+                    redis慢查询日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CentOS 下的 Mysql 的安装和使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="centos-&#x4E0B;&#x7684;-mysql-&#x7684;&#x5B89;&#x88C5;&#x548C;&#x4F7F;&#x7528;">CentOS &#x4E0B;&#x7684; Mysql &#x7684;&#x5B89;&#x88C5;&#x548C;&#x4F7F;&#x7528;</h2>
+<h2 id="&#x5B89;&#x88C5;-mysql">&#x5B89;&#x88C5; mysql</h2>
+<pre><code>$ yum update -y
+$ yum -y install mysql mysql-server mysql-devel mariadb-server
+
+error: Failed to start mysqld.service: Unit not found.
+&#x5B89;&#x88C5; mariadb-server
+$ yum install -y mariadb-server
+</code></pre><h2 id="&#x542F;&#x52A8;&#x8BBE;&#x7F6E;">&#x542F;&#x52A8;&#x8BBE;&#x7F6E;</h2>
+<pre><code>&#x6DFB;&#x52A0;&#x5230;&#x5F00;&#x673A;&#x542F;&#x52A8;
+$ systemctl enable mariadb.service
+
+&#x542F;&#x52A8;&#x670D;&#x52A1;
+$ systemctl start mariadb.service
+$ systemctl stop mariadb.service
+$ systemctl restart mariadb.service
+
+$ mysql -u root -p
+</code></pre><h2 id="mysql-&#x8BBE;&#x7F6E;">mysql &#x8BBE;&#x7F6E;</h2>
+<pre><code>$ vi /etc/my.cnf.d/server.cnf
+$ vi /etc/my.cnf.d/client.cnf
+$ vi /etc/my.cnf.d/mysql-clients.cnf
+</code></pre><h2 id="&#x6570;&#x636E;&#x5E93;&#x767B;&#x9646;">&#x6570;&#x636E;&#x5E93;&#x767B;&#x9646;</h2>
+<pre><code>&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;:
+$ mysql -u root -p
+$ mysql -h localhost -u root -p123
+$ mysql -uroot -prddroot -h db.livenowhy.com -P 3306 -D registry
+
+CREATE DATABASE ***
+
+$ mysql -uroot -pxxx -h 127.0.0.1 -P 3306
+&#x5982;&#x679C;&#x4F7F;&#x7528; localhost &#x4F1A;&#x51FA;&#x73B0;:
+ERROR 2002 (HY000): Can&apos;t connect to local MySQL server through socket &apos;/var/lib/mysql/mysql.sock&apos;
+</code></pre><h2 id="&#x5141;&#x8BB8;root&#x7528;&#x6237;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#xFF0C;&#x5E76;&#x5177;&#x6709;&#x6240;&#x6709;&#x5E93;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x6743;&#x9650;&#xFF0C;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#xFF1A;">&#x5141;&#x8BB8;root&#x7528;&#x6237;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#xFF0C;&#x5E76;&#x5177;&#x6709;&#x6240;&#x6709;&#x5E93;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x6743;&#x9650;&#xFF0C;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#xFF1A;</h2>
+<pre><code>&#x5728;&#x672C;&#x673A;&#x5148;&#x4F7F;&#x7528;root&#x7528;&#x6237;&#x767B;&#x5F55;mysql&#xFF1A;
+mysql -u root -p
+&#x8FDB;&#x884C;&#x6388;&#x6743;&#x64CD;&#x4F5C;:
+mysql&gt;GRANT ALL PRIVILEGES ON *.* TO &apos;root&apos;@&apos;%&apos; IDENTIFIED BY &apos;youpassword&apos; WITH GRANT OPTION;
+&#x91CD;&#x8F7D;&#x6388;&#x6743;&#x8868;:
+FLUSH PRIVILEGES;
+&#x9000;&#x51FA;mysql&#x6570;&#x636E;&#x5E93;:
+exit
+
+&#x5E76;&#x4E14;&#x6CE8;&#x91CA;&#x4E0B;&#x9762;&#x6587;&#x4EF6;&#x4E2D; bind-address = 127.0.0.1
+vi /etc/mysql/my.cnf
+ubuntu &#x91CD;&#x542F; mysql: /etc/init.d/mysql restart
+</code></pre><h2 id="&#x91CD;&#x7F6E;&#x5BC6;&#x7801;">&#x91CD;&#x7F6E;&#x5BC6;&#x7801;</h2>
+<p>  <code>1</code> &#x91CD;&#x7F6E;&#x5BC6;&#x7801;&#x7684;&#x7B2C;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x8DF3;&#x8FC7; mysql &#x7684;&#x5BC6;&#x7801;&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;, &#x65B9;&#x6CD5;&#x5982;&#x4E0B;:</p>
+<pre><code># vim /etc/my.cnf (windows&#x4E0B;&#x4FEE;&#x6539;&#x7684;&#x662F;my.ini)
+&#x5728;&#x6587;&#x6863;&#x5185;&#x641C;&#x7D22; mysqld &#x5B9A;&#x4F4D;&#x5230; [mysqld] &#x6587;&#x672C;&#x6BB5;:
+&#x5728; [mysqld] &#x540E;&#x9762;&#x4EFB;&#x610F;&#x4E00;&#x884C;&#x6DFB;&#x52A0; &quot;skip-grant-tables&quot; &#x7528;&#x6765;&#x8DF3;&#x8FC7;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x7684;&#x8FC7;&#x7A0B;:
+[mysqld]
+datadir=/var/lib/mysql
+skip-grant-tables
+# &#x4FDD;&#x5B58;&#x6587;&#x6863;&#x5E76;&#x9000;&#x51FA;
+</code></pre><p>  <code>2</code> &#x91CD;&#x542F;MySQL</p>
+<pre><code># systemctl restart mariadb.service
+</code></pre><p>  <code>3</code> &#x91CD;&#x542F;&#x4E4B;&#x540E;&#x8F93;&#x5165; mysql &#x5373;&#x53EF;&#x8FDB;&#x5165; mysql</p>
+<pre><code>mysql&gt; use mysql;
+mysql&gt; update user set password=password(&quot;&#x4F60;&#x7684;&#x65B0;&#x5BC6;&#x7801;&quot;) where user=&quot;root&quot;;
+mysql&gt; flush privileges;
+mysql&gt; quit
+&#x5230;&#x8FD9;&#x91CC;root&#x8D26;&#x6237;&#x5C31;&#x5DF2;&#x7ECF;&#x91CD;&#x7F6E;&#x6210;&#x65B0;&#x7684;&#x5BC6;&#x7801;&#x4E86;
+</code></pre><p>  <code>4</code> &#x7F16;&#x8F91; my.cnf, &#x53BB;&#x6389;&#x521A;&#x624D;&#x6DFB;&#x52A0;&#x7684;&#x5185;&#x5BB9;, &#x7136;&#x540E;&#x91CD;&#x542F; mysql</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="02_base.html" class="navigation navigation-next navigation-unique" aria-label="Next page: mysql kill process 解决死锁">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CentOS 下的 Mysql 的安装和使用","level":"1.10.1","depth":2,"next":{"title":"mysql kill process 解决死锁","level":"1.10.2","depth":2,"path":"database/02_base.md","ref":"database/02_base.md","articles":[]},"previous":{"title":"database","level":"1.10","depth":1,"ref":"","articles":[{"title":"CentOS 下的 Mysql 的安装和使用","level":"1.10.1","depth":2,"path":"database/01_install.md","ref":"database/01_install.md","articles":[]},{"title":"mysql kill process 解决死锁","level":"1.10.2","depth":2,"path":"database/02_base.md","ref":"database/02_base.md","articles":[]},{"title":"sql 语句","level":"1.10.3","depth":2,"path":"database/03_sql.md","ref":"database/03_sql.md","articles":[]},{"title":"mysqldump选项","level":"1.10.4","depth":2,"path":"database/04_mysqldump.md","ref":"database/04_mysqldump.md","articles":[]},{"title":"InfluxDB","level":"1.10.5","depth":2,"path":"database/60_influxdb.md","ref":"database/60_influxdb.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","expandable-chapters","katex","ad"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css"},"pluginsConfig":{"ad":{"contentBottom":"%3Cdiv%3E%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A//www.miitbeian.gov.cn%22%3E%u8C6BICP%u590715020239%u53F7-1%3C/a%3E%3C/div%3E"},"expandable-chapters":{},"katex":{},"highlight":{},"search":{},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"livenowhy","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人文档笔记","links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*","description":"个人文档笔记, 学习记录"},"file":{"path":"database/01_install.md","mtime":"2024-01-10T01:02:34.507Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2024-01-10T01:24:30.744Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ad/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
