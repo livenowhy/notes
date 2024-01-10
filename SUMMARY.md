@@ -20,7 +20,7 @@
   * [mac 开发环境配置](tools/03_mac_开发环境.md)
   * [git 命令](tools/04_git_base.md)
   * [git reference](tools/05_git_reference.md)
-  * [git --mirror 概述](tools/06_git_ mirror.md)
+  * [git --mirror 概述](tools/06_git_mirror.md)
   * [工作中的工具](tools/09_soft.md)
   * [群晖 nas ssh 登录](tools/10_nas.md)
   * [方法一: 直接发布静态文件到 Github Pages](tools/11_gitbook_pages.md)
@@ -64,7 +64,7 @@
   * [Django model update的各种用法介绍](django/09_django_model_update.md)
   * [Django--自定义 Command 命令](django/10_django_command.md)
   * [django 常用插件](django/100_常用插件.md)
-  * [https://www.cnblogs.com/wangyueping/p/11625641.html](django/11_content_type.md)
+  * [参考](django/11_content_type.md)
   * [Django权限系统auth模块详解](django/12_auth.md)
   * [Django中authenticate和login模块](django/13_authenticate_login.md)
   * [django自带的权限管理Permission用法说明](django/14_auth_permission.md)
@@ -90,12 +90,16 @@
   * [安装依赖](django/34_django_rest_framework.md)
   * [Django 基础](django/99_error.md)
 
+* node_modules
+
 * database
   * [CentOS 下的 Mysql 的安装和使用](database/01_install.md)
   * [mysql kill process 解决死锁](database/02_base.md)
   * [sql 语句](database/03_sql.md)
   * [mysqldump选项](database/04_mysqldump.md)
   * [InfluxDB](database/60_influxdb.md)
+
+* _book
 
 * groovy
   * [Groovy 基本语法](groovy/01_basic_syntax.md)

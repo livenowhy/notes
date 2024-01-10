@@ -13,6 +13,7 @@
       }
     },
     "plugins":[
+      "-lunr",
       "expandable-chapters",
       "katex",
       "ad"
