@@ -1,0 +1,11 @@
+---
+- hosts: hw    #将要执行任务的主机，已经在hosts文件中定义好了，可是单个主机或主机组
+  remote_user: root      #在目标主机上执行任务时的用户身份
+  vars:
+    - pkg: httpd
+  tasks:
+    - name: Install the package "wget"
+      ansible.builtin.apt:
+      name: wget
+      
+# ansible-playbook apt.yml --inventory-file=hosts.ini
