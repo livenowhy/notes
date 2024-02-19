@@ -16,7 +16,7 @@
 
 ### pipeline-utility-steps
 
-    特定版本: https://updates.jenkins-ci.org/download/plugins/pipeline-utility-steps/2.15.0/pipeline-utility-steps.hpi
+    特定版本: https://updates.jenkins-ci.org/download/plugins/pipeline-utility-steps/2.8.0/pipeline-utility-steps.hpi
 
     支持的方法清单如下:
     compareVersions:    Compare two version number strings
@@ -38,3 +38,9 @@
     writeMavenPom:      Write a maven project file.
     writeYaml:          Write a yaml from an object or objects.
     zip:                Create Zip file
+
+
+### jar 包
+    
+    ./jenkins/war/WEB-INF/lib
+    https://mvnrepository.com/artifact/redis.clients/jedis/4.1.1
