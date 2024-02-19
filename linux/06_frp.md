@@ -9,6 +9,7 @@
 
     服务端配置 (有外网ip的)
     $ mkdir /etc/frp/
+    # /Users/zpliu/Desktop/notes/linux/frp/frpc.ini
     $ cp /share/notes/public/linux/config/frp/systemd/frps.service /etc/systemd/system/frps.service
     $ cp /share/notes/public/linux/config/frp/frps.ini /etc/frp/frps.ini
     $ cp /share/notes/public/linux/config/frp/frps /usr/bin/frps

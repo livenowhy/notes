@@ -1,0 +1,36 @@
+---
+- hosts: hw              # 将要执行任务的主机，已经在hosts文件中定义好了，可是单个主机或主机组
+  remote_user: root      # 在目标主机上执行任务时的用户身份
+  vars:
+    - pkg: httpd
+  tasks:
+    - name: mkdir frp
+      command: mkdir -p /etc/frp/
+
+    - name: copy frpc.ini 配置文件
+      ansible.builtin.copy:
+        src: /Users/zpliu/Desktop/notes/linux/frp/frpc.ini
+        dest: /etc/frp/frps.ini
+
+    - name:  copy frps 执行文件
+      ansible.builtin.copy:
+        src: /Users/zpliu/Desktop/notes/linux/frp/frps
+        dest: /usr/bin/frps
+
+
+    - name: copy frps service 配置文件
+      ansible.builtin.copy:
+        src: /Users/zpliu/Desktop/notes/linux/frp/systemd/frps.service
+        dest: /etc/systemd/system/frps.service
+
+    - name: 执行权限
+      command: chmod a+x /usr/bin/frps
+
+    - name: 重启并重载以获取配置更改
+      ansible.builtin.systemd_service:
+        state: restarted
+        daemon_reload: true
+        enabled: true
+        name: frps
+
+# # ansible-playbook frps.yml --inventory-file=hosts.ini
