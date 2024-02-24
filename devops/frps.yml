@@ -15,8 +15,7 @@
     - name:  copy frps 执行文件
       ansible.builtin.copy:
         src: /Users/zpliu/Desktop/notes/linux/frp/frps
-        dest: /usr/bin/frps
-
+        dest:r
 
     - name: copy frps service 配置文件
       ansible.builtin.copy:
@@ -32,5 +31,7 @@
         daemon_reload: true
         enabled: true
         name: frps
+
+# 修改配置文件密码 重启
 
 # # ansible-playbook frps.yml --inventory-file=hosts.ini
