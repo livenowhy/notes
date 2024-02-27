@@ -17,6 +17,7 @@
         src: /Users/zpliu/Desktop/notes/linux/frp/frps
         dest:r
 
+
     - name: copy frps service 配置文件
       ansible.builtin.copy:
         src: /Users/zpliu/Desktop/notes/linux/frp/systemd/frps.service
